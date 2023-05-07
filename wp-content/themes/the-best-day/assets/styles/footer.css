@@ -1,5 +1,5 @@
 .site-footer {
-    width: 80%;
+    width: min(1440px, 80%);
     margin: 0 auto;
 }
 
