@@ -18,7 +18,7 @@ get_header();
 		?>
 			<div class="post">
 				<div class="post__image-wrapper">
-					<div class="post__image" style="background-image: url('<?php the_field('изображение_события'); ?>')"></div>
+					<div class="post__image" style="background-image: url('<?php echo get_the_post_thumbnail_url(); ?>')"></div>
 				</div>
 				<div class="post__information">
 					<p class="post__type"><?php the_field('тип_события'); ?></>
