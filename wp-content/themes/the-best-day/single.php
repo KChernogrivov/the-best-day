@@ -15,14 +15,35 @@ get_header();
 		<?php
 		while ( have_posts() ) :
 			the_post();
+		?>
+			<div class="post">
+				<div class="post__image-wrapper">
+					<div class="post__image" style="background-image: url('<?php the_field('изображение_события'); ?>')"></div>
+				</div>
+				<div class="post__information">
+					<p class="post__type"><?php the_field('тип_события'); ?></>
+					<p class="post__title"><?php the_title()?></p>
+					<p class="post__description"><?php echo get_the_content(); ?></p>
+					<div class="time-price">
+						<div class="group">
+							<p class="group__title">Во сколько приходить</p>
+							<p class="group__data"><?php the_field('во_сколько_приходить')?></p>
+						</div>
+						<div class="group">
+							<p class="group__title">Примерно потратите</p>
+							<p class="group__data"><?php the_field('примерно_потратите') ?></p>
+						</div>
+					</div>
+					<div class="post__place">
+						<div class="group">
+							<p class="group__title">Находится тут</p>
+							<p class="group__data"><?php the_field('место_проведения') ?></p>
+						</div>
+					</div>
+				</div>
+			</div>
 
-			get_template_part( 'template-parts/content', get_post_type() );
-
-			// If comments are open or we have at least one comment, load up the comment template.
-			if ( comments_open() || get_comments_number() ) :
-				comments_template();
-			endif;
-
+		<?php
 		endwhile; // End of the loop.
 		?>
 

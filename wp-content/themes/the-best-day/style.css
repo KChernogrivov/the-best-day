@@ -85,7 +85,7 @@ body {
  * Render the `main` element consistently in IE.
  */
 main {
-	width: min(1440px, 80%);
+	width: min(1110px, 80%);
 	margin: 0 auto;
 	display: block;
 }
@@ -417,10 +417,6 @@ h4,
 h5,
 h6 {
 	clear: both;
-}
-
-p {
-	margin-bottom: 1.5em;
 }
 
 dfn,

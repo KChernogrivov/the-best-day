@@ -14,7 +14,7 @@
 	<header id="masthead" class="header">
 		<div class="header__wrapper">
 			<div class="header__nav">
-				<a href="#" class="header__logo">ЛучшийДень.рф</a>
+				<a href="/" class="header__logo">ЛучшийДень.рф</a>
 				<?php
 				wp_nav_menu( array(
 					'theme_location' => 'header-menu',
