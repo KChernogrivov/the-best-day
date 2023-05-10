@@ -2,7 +2,7 @@
 # This file is distributed under the same license as the Plugins - Elementor Website Builder - Stable (latest release) package.
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2023-04-21 08:25:21+0000\n"
+"PO-Revision-Date: 2023-05-07 09:55:14+0000\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -1083,7 +1083,7 @@ msgstr "Заявки"
 
 #: includes/editor-templates/panel.php:285 assets/js/editor.js:12704
 msgid "Color Sampler"
-msgstr "Сэмплер цветов"
+msgstr "Образец цвета"
 
 #: core/settings/editor-preferences/model.php:128
 msgid "Default Device View "
@@ -1498,7 +1498,7 @@ msgstr "Активные брейкпоинты"
 #: modules/shapes/widgets/text-path.php:503
 #: modules/shapes/widgets/text-path.php:568
 msgid "Stroke"
-msgstr "Линия"
+msgstr "Обводка"
 
 #: modules/shapes/widgets/text-path.php:468
 msgid "Path"
@@ -3169,7 +3169,7 @@ msgstr "У меня есть Elementor Pro"
 
 #: core/debug/inspector.php:115
 msgid "Elementor Debugger"
-msgstr "Отладчик Debugger"
+msgstr "Отладчик Elementor"
 
 #: core/admin/admin.php:174 assets/js/admin.js:1450 assets/js/gutenberg.js:109
 msgid "Back to WordPress Editor"
@@ -5187,7 +5187,7 @@ msgstr "Элементы спойлера"
 #: includes/widgets/toggle.php:46 includes/widgets/toggle.php:89
 #: includes/widgets/toggle.php:241
 msgid "Toggle"
-msgstr "Спойлер"
+msgstr "Переключить"
 
 #: includes/widgets/text-editor.php:46 includes/widgets/text-editor.php:105
 #: includes/widgets/text-editor.php:180

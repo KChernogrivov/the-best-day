@@ -1,0 +1,16 @@
+.site-footer {
+    width: min(1110px, 80%);
+    margin: 0 auto;
+}
+
+.site-footer__content {
+    display: flex;
+    justify-content: space-between;
+}
+
+.create-own-place {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+}
