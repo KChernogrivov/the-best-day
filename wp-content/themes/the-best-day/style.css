@@ -951,6 +951,11 @@ textarea {
 	margin-bottom: 1.5em;
 }
 
+.n2-ss-slide {
+	margin: 0 0 10px;
+	box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
 @font-face {
 	font-family: 'Circe';
 	src: local('Circe'),
