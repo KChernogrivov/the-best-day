@@ -246,7 +246,7 @@ function get_search_form( $args = array() ) {
 	 *
 	 * @link https://core.trac.wordpress.org/ticket/19321
 	 *
-	 * @param array $args The array of arguments for building the search form.
+	 * @param array $args The array of arguments for building the search form.`
 	 *                    See get_search_form() for information on accepted arguments.
 	 */
 	do_action( 'pre_get_search_form', $args );

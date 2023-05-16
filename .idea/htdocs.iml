@@ -1,7 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <module type="WEB_MODULE" version="4">
   <component name="NewModuleRootManager">
-    <content url="file://$MODULE_DIR$" />
+    <content url="file://$MODULE_DIR$">
+      <sourceFolder url="file://$MODULE_DIR$/wp-content/plugins" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/wp-content/plugins/elementor/includes" isTestSource="false" packagePrefix="Elementor" />
+      <sourceFolder url="file://$MODULE_DIR$/wp-content/plugins/elementskit-lite" isTestSource="false" packagePrefix="ElementsKit_Lite" />
+      <sourceFolder url="file://$MODULE_DIR$/wp-content/plugins/elementskit-lite/helpers" isTestSource="false" packagePrefix="ElementsKit_Lite" />
+      <sourceFolder url="file://$MODULE_DIR$/wp-content/plugins/essential-addons-for-elementor-lite/includes" isTestSource="false" packagePrefix="Essential_Addons_Elementor" />
+      <sourceFolder url="file://$MODULE_DIR$/wp-content/plugins/nextend-smart-slider3-pro" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/wp-content/plugins/nextend-smart-slider3-pro/Nextend/SmartSlider3Pro/Generator/Common/Facebook" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/wp-content/plugins/nextend-smart-slider3-pro/Nextend/SmartSlider3Pro/Generator/Common/Vimeo/api" isTestSource="false" packagePrefix="Vimeo" />
+      <sourceFolder url="file://$MODULE_DIR$/wp-content/plugins/royal-elementor-addons" isTestSource="false" packagePrefix="WprAddons" />
+      <sourceFolder url="file://$MODULE_DIR$/wp-includes" isTestSource="false" packagePrefix="PHPMailer" />
+    </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
   </component>

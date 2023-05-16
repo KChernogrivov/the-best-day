@@ -1,0 +1,26 @@
+.search-wrapper {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 20px;
+    border: 1px solid rgba(30, 30, 30, 0.27);
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.06);
+    border-radius: 50px;
+}
+
+.search__submit {
+    font-family: 'Circe', serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 24px;
+    color: #1E1E1E;
+    width: 160px;
+    height: 60px;
+    background: #13E2DA !important;
+    border-radius: 30px !important;
+}
+
+.search__input {
+    border-radius: 0 !important;
+    width: 15%;
+}
