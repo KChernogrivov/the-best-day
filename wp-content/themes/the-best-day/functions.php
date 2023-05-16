@@ -142,6 +142,7 @@ function the_best_day_scripts() {
 	wp_enqueue_style( 'the-best-day-style__header', get_template_directory_uri() . "/assets/styles/header.css" );
 	wp_enqueue_style( 'the-best-day-style__footer', get_template_directory_uri() . "/assets/styles/footer.css" );
 	wp_enqueue_style( 'the-best-day-style__single', get_template_directory_uri() . "/assets/styles/single.css" );
+	wp_enqueue_style( 'the-best-day-style__slider-text', get_template_directory_uri() . "/assets/styles/slider-text.css" );
 
 	wp_style_add_data( 'the-best-day-style', 'rtl', 'replace' );
 
