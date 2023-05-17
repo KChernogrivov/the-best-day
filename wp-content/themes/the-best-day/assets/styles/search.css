@@ -20,6 +20,30 @@
     border-radius: 30px !important;
 }
 
+.search__button {
+    display: flex;
+    gap: 10px;
+    justify-content: flex-start;
+    align-items: center;
+    height: 60px;
+}
+
+.search__field {
+    width: 15%;
+    position: relative;
+}
+
+.search__dropdown {
+    z-index: 2;
+    padding: 17px 24px;
+    background: #FFFFFF;
+    border: 1px solid rgba(0, 0, 0, 0.4);
+    border-radius: 10px;
+    position: absolute;
+    bottom: calc(-36px - 100%);
+    left: 0;
+}
+
 .search__input {
     border-radius: 0 !important;
     width: 15%;
