@@ -25,6 +25,8 @@
 }
 
 .search__button {
+    cursor: pointer;
+    user-select: none;
     display: flex;
     gap: 10px;
     justify-content: flex-start;
@@ -38,6 +40,7 @@
 }
 
 .search__dropdown {
+    display: none;
     z-index: 2;
     padding: 17px 24px;
     background: #FFFFFF;
@@ -64,4 +67,8 @@
 .search__dropdown-item {
     display: flex;
     gap: 5px;
+}
+
+.open {
+    display: block !important;
 }
