@@ -242,3 +242,70 @@ function cf_search_distinct($where)
 }
 
 add_filter('posts_distinct', 'cf_search_distinct');
+
+
+// Функция поиска в WordPress
+function custom_search_query() {
+
+    // Устанавливаем флаг, который будет использоваться для проверки, был ли введен поисковый запрос
+    $has_search_query = false;
+
+    // Создаем строку с названиями полей и их значениями, которые будут передаваться в URL с помощью функции add_query_arg()
+    $query_args = '';
+
+    // Проверяем, был ли введен поисковый запрос, используя значения полей
+    if ( ! empty( $_GET['time_start'] ) ) {
+
+        $query_args = add_query_arg( 'time_start', sanitize_text_field( $_GET['time_start'] ), $query_args );
+        $has_search_query = true;
+    }
+
+    if ( ! empty( $_GET['time_end'] ) ) {
+
+        $query_args = add_query_arg( 'time_end', sanitize_text_field( $_GET['time_end'] ), $query_args );
+        $has_search_query = true;
+    }
+
+
+    // Получаем поисковый запрос из параметра "s", если он был введен
+    $search_query = '';
+
+    if ( ! empty( $_GET['s'] ) ) {
+
+        $search_query = sanitize_text_field( $_GET['s'] );
+        $has_search_query = true;
+
+    }
+
+    // Если был введен поисковый запрос
+    if ( $has_search_query ) {
+        // Добавляем метапараметры для поиска в нескольких полях
+        $meta_query = array(
+            'relation' => 'AND',
+            array(
+                'key' => 'time_to_come',
+                'value' => sanitize_text_field( $_GET['time_start'] ), sanitize_text_field( $_GET['time_end'] ),
+                'compare' => 'BETWEEN',
+            ),
+            array(
+                'key' => 'cost',
+                'value' => sanitize_text_field( $_GET['money_start'] ), sanitize_text_field( $_GET['money_end'] ),
+                'compare' => 'BETWEEN',
+            ),
+        );
+
+        // Создаем основной аргумент запроса, включая метапараметры и поисковый запрос
+        $args = array(
+            'post_type' => 'post',
+            's' => $search_query,
+            'meta_query' => $meta_query,
+        );
+
+        // Выполняем запрос и выводим результаты
+        $query = new WP_Query( $args );
+
+        // остальной код для вывода поиска на странице
+    }
+}
+
+add_action( 'pre_get_posts', 'custom_search_query' );

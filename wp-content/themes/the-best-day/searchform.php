@@ -11,11 +11,11 @@
             <div id="time-field__dropdown" class="search__dropdown">
                 <div class="search__dropdown-item typing-field">
                     <label class="search__label" for="time_start">От</label>
-                    <input class="search__input-text" placeholder="Поиск" type="time" value="" id="time_start" name="time_start" />
+                    <input class="search__input-text" type="time" value="00:00" id="time_start" name="time_start" />
                 </div>
                 <div class="search__dropdown-item typing-field">
                     <label class="search__label" for="time_end">До</label>
-                    <input class="search__input-text" placeholder="Поиск" type="time" value="" id="time_end" name="time_end" />
+                    <input class="search__input-text" type="time" value="23:59" id="time_end" name="time_end" />
                 </div>
             </div>
         </div>
@@ -28,11 +28,11 @@
             <div id="money-field__dropdown" class="search__dropdown">
                 <div class="search__dropdown-item typing-field">
                     <label class="search__label" for="money_start">От</label>
-                    <input class="search__input-text" placeholder="Поиск" type="number" value="" id="money_start" name="money_start" />
+                    <input class="search__input-text" placeholder="0" type="number" value="0" id="money_start" name="money_start" />
                 </div>
                 <div class="search__dropdown-item typing-field">
                     <label class="search__label" for="money_end">До</label>
-                    <input class="search__input-text" placeholder="Поиск" type="number" value="" id="money_end" name="money_end" />
+                    <input class="search__input-text" placeholder="0" type="number" value="999999" id="money_end" name="money_end" />
                 </div>
             </div>
         </div>
@@ -44,27 +44,27 @@
             </div>
             <div id="emotion-field__dropdown" class="search__dropdown">
                 <div class="search__dropdown-item">
-                    <input class="search__input" placeholder="Поиск" type="checkbox" value="" id="silently" name="silently" />
+                    <input class="search__input" placeholder="Поиск" type="checkbox" value="silently" id="silently" name="emotion" />
                     <label class="search__label" for="silently">Тихо</label>
                 </div>
                 <div class="search__dropdown-item">
-                    <input class="search__input" placeholder="Поиск" type="checkbox" value="" id="quietly" name="quietly" />
+                    <input class="search__input" placeholder="Поиск" type="checkbox" value="quietly" id="quietly" name="emotion" />
                     <label class="search__label" for="quietly">Спокойно</label>
                 </div>
                 <div class="search__dropdown-item">
-                    <input class="search__input" placeholder="Поиск" type="checkbox" value="" id="cheerfully" name="cheerfully" />
+                    <input class="search__input" placeholder="Поиск" type="checkbox" value="cheerfully" id="cheerfully" name="emotion" />
                     <label class="search__label" for="cheerfully">Весело</label>
                 </div>
                 <div class="search__dropdown-item">
-                    <input class="search__input" placeholder="Поиск" type="checkbox" value="" id="new_experience" name="new_experience" />
+                    <input class="search__input" placeholder="Поиск" type="checkbox" value="new_experience" id="new_experience" name="emotion" />
                     <label class="search__label" for="new_experience">Новые ощущения</label>
                 </div>
                 <div class="search__dropdown-item">
-                    <input class="search__input" placeholder="Поиск" type="checkbox" value="" id="rave" name="rave" />
+                    <input class="search__input" placeholder="Поиск" type="checkbox" value="rave" id="rave" name="emotion" />
                     <label class="search__label" for="rave">Отрыв</label>
                 </div>
                 <div class="search__dropdown-item">
-                    <input class="search__input" placeholder="Поиск" type="checkbox" value="" id="smart" name="smart" />
+                    <input class="search__input" placeholder="Поиск" type="checkbox" value="smart" id="smart" name="emotion" />
                     <label class="search__label" for="smart">Развивает</label>
                 </div>
             </div>
@@ -105,3 +105,30 @@
         <input class="search__submit" type="submit" id="searchsubmit" value="<?php echo esc_attr_x( 'Найти', 'submit button' ); ?>" />
     </div>
 </form>
+
+<script>
+    const time = document.getElementById("time-field");
+    const money = document.getElementById("money-field");
+    const emotion = document.getElementById("emotion-field");
+    const partner = document.getElementById("partner-field");
+
+    const timeDropdown = document.getElementById("time-field__dropdown");
+    const moneyDropdown = document.getElementById("money-field__dropdown");
+    const emotionDropdown = document.getElementById("emotion-field__dropdown");
+    const partnerDropdown = document.getElementById("partner-field__dropdown");
+
+    const fields = [time, money, emotion, partner];
+    const dropdowns = [timeDropdown, moneyDropdown, emotionDropdown, partnerDropdown];
+
+    time.addEventListener('click', openMenu.bind(event, timeDropdown));
+    money.addEventListener("click", openMenu.bind(event, moneyDropdown));
+    emotion.addEventListener("click", openMenu.bind(event, emotionDropdown));
+    partner.addEventListener("click", openMenu.bind(event, partnerDropdown));
+
+    function openMenu(event) {
+        let otherFields = dropdowns.filter((item) => item !== event);
+        otherFields.forEach((field) => field.classList.remove("open"));
+        event.classList.toggle("open");
+        return "";
+    }
+</script>
