@@ -14,10 +14,14 @@
     font-size: 16px;
     line-height: 24px;
     color: #1E1E1E;
-    width: 160px;
+    width: min(160px, 300px);
     height: 60px;
     background: #13E2DA !important;
     border-radius: 30px !important;
+}
+
+.search__label {
+    white-space: nowrap;
 }
 
 .search__button {
@@ -37,14 +41,27 @@
     z-index: 2;
     padding: 17px 24px;
     background: #FFFFFF;
-    border: 1px solid rgba(0, 0, 0, 0.4);
-    border-radius: 10px;
+    border: 1px solid rgba(0, 0, 0, 0.4) !important;
+    border-radius: 10px !important;
     position: absolute;
-    bottom: calc(-36px - 100%);
+    top: 100%;
     left: 0;
 }
 
-.search__input {
-    border-radius: 0 !important;
-    width: 15%;
+.typing-field {
+    gap: 15px !important;
+    margin-bottom: 20px;
+}
+
+.search__input-text {
+    width: 80px;
+    height: 30px;
+    background: #FFFFFF;
+    border: 1px solid #13E2DA !important;
+    border-radius: 10px !important;
+}
+
+.search__dropdown-item {
+    display: flex;
+    gap: 5px;
 }

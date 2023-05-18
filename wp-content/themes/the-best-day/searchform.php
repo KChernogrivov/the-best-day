@@ -9,13 +9,13 @@
                 </svg> Время
             </div>
             <div class="search__dropdown">
-                <div class="search__time">
-                    <label class="search__time" for="time_start">От</label>
-                    <input class="search__input" placeholder="Поиск" type="time" value="" id="time_start" name="time_start" />
+                <div class="search__dropdown-item typing-field">
+                    <label class="search__label" for="time_start">От</label>
+                    <input class="search__input-text" placeholder="Поиск" type="time" value="" id="time_start" name="time_start" />
                 </div>
-                <div class="search__time">
-                    <label class="search__time" for="time_end">До</label>
-                    <input class="search__input" placeholder="Поиск" type="time" value="" id="time_end" name="time_end" />
+                <div class="search__dropdown-item typing-field">
+                    <label class="search__label" for="time_end">До</label>
+                    <input class="search__input-text" placeholder="Поиск" type="time" value="" id="time_end" name="time_end" />
                 </div>
             </div>
         </div>
@@ -26,6 +26,14 @@
                     </svg> Деньги
             </div>
             <div class="search__dropdown">
+                <div class="search__dropdown-item typing-field">
+                    <label class="search__label" for="time_start">От</label>
+                    <input class="search__input-text" placeholder="Поиск" type="number" value="" id="time_start" name="time_start" />
+                </div>
+                <div class="search__dropdown-item typing-field">
+                    <label class="search__label" for="time_end">До</label>
+                    <input class="search__input-text" placeholder="Поиск" type="number" value="" id="time_end" name="time_end" />
+                </div>
             </div>
         </div>
         <div class="search__field">
@@ -35,6 +43,30 @@
                     </svg> Эмоции
             </div>
             <div class="search__dropdown">
+                <div class="search__dropdown-item">
+                    <input class="search__input" placeholder="Поиск" type="checkbox" value="" id="silently" name="silently" />
+                    <label class="search__label" for="silently">Тихо</label>
+                </div>
+                <div class="search__dropdown-item">
+                    <input class="search__input" placeholder="Поиск" type="checkbox" value="" id="quietly" name="quietly" />
+                    <label class="search__label" for="quietly">Спокойно</label>
+                </div>
+                <div class="search__dropdown-item">
+                    <input class="search__input" placeholder="Поиск" type="checkbox" value="" id="cheerfully" name="cheerfully" />
+                    <label class="search__label" for="cheerfully">Весело</label>
+                </div>
+                <div class="search__dropdown-item">
+                    <input class="search__input" placeholder="Поиск" type="checkbox" value="" id="new_experience" name="new_experience" />
+                    <label class="search__label" for="new_experience">Новые ощущения</label>
+                </div>
+                <div class="search__dropdown-item">
+                    <input class="search__input" placeholder="Поиск" type="checkbox" value="" id="rave" name="rave" />
+                    <label class="search__label" for="rave">Отрыв</label>
+                </div>
+                <div class="search__dropdown-item">
+                    <input class="search__input" placeholder="Поиск" type="checkbox" value="" id="smart" name="smart" />
+                    <label class="search__label" for="smart">Развивает</label>
+                </div>
             </div>
         </div>
         <div class="search__field">
@@ -44,6 +76,30 @@
                     </svg> С кем
             </div>
             <div class="search__dropdown">
+                <div class="search__dropdown-item">
+                    <input class="search__input" placeholder="Поиск" type="radio" value="" id="smart" name="smart" />
+                    <label class="search__label" for="smart">Один</label>
+                </div>
+                <div class="search__dropdown-item">
+                    <input class="search__input" placeholder="Поиск" type="radio" value="" id="smart" name="smart" />
+                    <label class="search__label" for="smart">С другом/подругой</label>
+                </div>
+                <div class="search__dropdown-item">
+                    <input class="search__input" placeholder="Поиск" type="radio" value="" id="smart" name="smart" />
+                    <label class="search__label" for="smart">С детьми</label>
+                </div>
+                <div class="search__dropdown-item">
+                    <input class="search__input" placeholder="Поиск" type="radio" value="" id="smart" name="smart" />
+                    <label class="search__label" for="smart">С родителями</label>
+                </div>
+                <div class="search__dropdown-item">
+                    <input class="search__input" placeholder="Поиск" type="radio" value="" id="smart" name="smart" />
+                    <label class="search__label" for="smart">На свидание</label>
+                </div>
+                <div class="search__dropdown-item">
+                    <input class="search__input" placeholder="Поиск" type="radio" value="" id="smart" name="smart" />
+                    <label class="search__label" for="smart">С компанией</label>
+                </div>
             </div>
         </div>
         <input class="search__submit" type="submit" id="searchsubmit" value="<?php echo esc_attr_x( 'Найти', 'submit button' ); ?>" />
