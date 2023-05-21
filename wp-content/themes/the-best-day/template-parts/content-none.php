@@ -11,6 +11,7 @@
 
 <section class="no-results not-found">
 	<header class="page-header">
+		<?php get_search_form(); ?>
 		<h1 class="page-title"><?php esc_html_e( 'Ничего не найдено', 'the-best-day' ); ?></h1>
 	</header><!-- .page-header -->
 
@@ -36,14 +37,12 @@
 
 			<p><?php esc_html_e( 'По данным параметрам поиска ничего не найдено.', 'the-best-day' ); ?></p>
 			<?php
-			get_search_form();
 
 		else :
 			?>
 
 			<p><?php esc_html_e( 'По данной категории ничего не найдено.', 'the-best-day' ); ?></p>
 			<?php
-			get_search_form();
 
 		endif;
 		?>

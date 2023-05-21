@@ -66,7 +66,7 @@ msgstr[1] ""
 
 #: comments.php:68
 msgid "Comments are closed."
-msgstr ""
+msgstr "Комментарии закрыты"
 
 #: footer.php:18
 msgid "https://wordpress.org/"
@@ -106,13 +106,13 @@ msgstr ""
 #: inc/template-tags.php:30
 msgctxt "post date"
 msgid "Posted on %s"
-msgstr ""
+msgstr "Дата публикации"
 
 #. translators: %s: post author.
 #: inc/template-tags.php:46
 msgctxt "post author"
 msgid "by %s"
-msgstr ""
+msgstr "Автор события"
 
 #. translators: used between list items, there is a space after the comma
 #: inc/template-tags.php:63
@@ -122,7 +122,7 @@ msgstr ""
 #. translators: 1: list of categories.
 #: inc/template-tags.php:66
 msgid "Posted in %1$s"
-msgstr ""
+msgstr "Размещен в %1$s"
 
 #. translators: used between list items, there is a space after the comma
 #: inc/template-tags.php:70
@@ -133,18 +133,18 @@ msgstr ""
 #. translators: 1: list of tags.
 #: inc/template-tags.php:73
 msgid "Tagged %1$s"
-msgstr ""
+msgstr "Теги %1$s"
 
 #. translators: %s: post title
 #: inc/template-tags.php:83
 msgid "Leave a Comment<span class=\"screen-reader-text\"> on %s</span>"
-msgstr ""
+msgstr "Оставить комментарий class=\"screen-reader-text\"> на %s</span>"
 
 #. translators: %s: Name of current post. Only visible to screen readers
 #: inc/template-tags.php:100
 #: template-parts/content-page.php:39
 msgid "Edit <span class=\"screen-reader-text\">%s</span>"
-msgstr ""
+msgstr "Редактировать <span class=\"screen-reader-text\">%s</span>"
 
 #: inc/woocommerce.php:186
 msgid "View your shopping cart"
@@ -160,28 +160,28 @@ msgstr[1] ""
 #. translators: %s: search query.
 #: search.php:22
 msgid "Search Results for: %s"
-msgstr ""
+msgstr "Найденные события:"
 
 #: single.php:23
 msgid "Previous:"
-msgstr ""
+msgstr "Предыдущий:"
 
 #: single.php:24
 msgid "Next:"
-msgstr ""
+msgstr "Следующий: "
 
 #: template-parts/content-none.php:14
 msgid "Nothing Found"
-msgstr ""
+msgstr "Ничего не найдено."
 
 #. translators: 1: link to WP admin new post page.
 #: template-parts/content-none.php:24
 msgid "Ready to publish your first post? <a href=\"%1$s\">Get started here</a>."
-msgstr ""
+msgstr "Готовы опубликовать свой первый пост? <a href=\"%1$s\">Начать</a>."
 
 #: template-parts/content-none.php:37
 msgid "Sorry, but nothing matched your search terms. Please try again with some different keywords."
-msgstr ""
+msgstr "Извините, но ничто не соответствует вашим поисковым запросам. Пожалуйста, попробуйте еще раз с другими ключевыми словами."
 
 #: template-parts/content-none.php:44
 msgid "It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps searching can help."
@@ -190,7 +190,7 @@ msgstr ""
 #: template-parts/content-page.php:25
 #: template-parts/content.php:53
 msgid "Pages:"
-msgstr ""
+msgstr "Страницы: "
 
 #. translators: %s: Name of current post. Only visible to screen readers
 #: template-parts/content.php:40

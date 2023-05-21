@@ -15,11 +15,9 @@ get_header();
         <?php if (have_posts()) : ?>
 
             <header class="page-header">
+                <?php get_search_form(); ?>
                 <h1 class="page-title">
-                    <?php
-                    /* translators: %s: search query. */
-                    printf(esc_html__('Search Results for: %s', 'the-best-day'), '<span>' . get_search_query() . '</span>');
-                    ?>
+                    Найденные события:
                 </h1>
             </header><!-- .page-header -->
 
@@ -53,7 +51,6 @@ get_header();
                         'compare' => 'BETWEEN',
                     ),
                 );
-                var_dump($_GET['emotion']);
                 if (!empty($_GET['emotion'])) {
                     $meta_query[] = array(
                         'key' => array('emotion_1', 'emotion_2'),
