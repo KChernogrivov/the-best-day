@@ -44,27 +44,27 @@
             </div>
             <div id="emotion-field__dropdown" class="search__dropdown">
                 <div class="search__dropdown-item">
-                    <input class="search__input" placeholder="Поиск" type="checkbox" value="silently" id="silently" name="emotion" />
+                    <input class="search__input" placeholder="Поиск" type="checkbox" value="Тихо" id="silently" name="emotion[]" />
                     <label class="search__label" for="silently">Тихо</label>
                 </div>
                 <div class="search__dropdown-item">
-                    <input class="search__input" placeholder="Поиск" type="checkbox" value="quietly" id="quietly" name="emotion" />
+                    <input class="search__input" placeholder="Поиск" type="checkbox" value="Спокойно" id="quietly" name="emotion[]" />
                     <label class="search__label" for="quietly">Спокойно</label>
                 </div>
                 <div class="search__dropdown-item">
-                    <input class="search__input" placeholder="Поиск" type="checkbox" value="cheerfully" id="cheerfully" name="emotion" />
+                    <input class="search__input" placeholder="Поиск" type="checkbox" value="Весело" id="cheerfully" name="emotion[]" />
                     <label class="search__label" for="cheerfully">Весело</label>
                 </div>
                 <div class="search__dropdown-item">
-                    <input class="search__input" placeholder="Поиск" type="checkbox" value="new_experience" id="new_experience" name="emotion" />
+                    <input class="search__input" placeholder="Поиск" type="checkbox" value="Новые ощущения" id="new_experience" name="emotion[]" />
                     <label class="search__label" for="new_experience">Новые ощущения</label>
                 </div>
                 <div class="search__dropdown-item">
-                    <input class="search__input" placeholder="Поиск" type="checkbox" value="rave" id="rave" name="emotion" />
+                    <input class="search__input" placeholder="Поиск" type="checkbox" value="Отрыв" id="rave" name="emotion[]" />
                     <label class="search__label" for="rave">Отрыв</label>
                 </div>
                 <div class="search__dropdown-item">
-                    <input class="search__input" placeholder="Поиск" type="checkbox" value="smart" id="smart" name="emotion" />
+                    <input class="search__input" placeholder="Поиск" type="checkbox" value="Развивает" id="smart" name="emotion[]" />
                     <label class="search__label" for="smart">Развивает</label>
                 </div>
             </div>

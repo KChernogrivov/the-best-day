@@ -53,6 +53,14 @@ get_header();
                         'compare' => 'BETWEEN',
                     ),
                 );
+                var_dump($_GET['emotion']);
+                if (!empty($_GET['emotion'])) {
+                    $meta_query[] = array(
+                        'key' => array('emotion_1', 'emotion_2'),
+                        'value' => $_GET['emotion'],
+                        'compare' => 'IN',
+                    );
+                }
 
                 // Создаем основной аргумент запроса, включая метапараметры и поисковый запрос
                 $args = array(
