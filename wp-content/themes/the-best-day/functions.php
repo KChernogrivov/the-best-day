@@ -204,124 +204,50 @@ if (defined('JETPACK__VERSION')) {
  * http://codex.wordpress.org/Plugin_API/Filter_Reference/posts_join
  */
 
-function cf_search_join($join)
-{
-    global $wpdb;
-    if (is_search()) {
-        $join .= ' LEFT JOIN ' . $wpdb->postmeta . ' ON ' . $wpdb->posts . '.ID = ' . $wpdb->postmeta . '.post_id ';
-    }
-    return $join;
-}
-
-add_filter('posts_join', 'cf_search_join');
-
-/**
- * Modify the search query with posts_where
- *
- * http://codex.wordpress.org/Plugin_API/Filter_Reference/posts_where
- */
-
-function cf_search_where($where)
-{
-    global $pagenow, $wpdb;
-    if (is_search()) {
-        $where = preg_replace(
-            "/\(\s*" . $wpdb->posts . ".post_title\s+LIKE\s*(\'[^\']+\')\s*\)/",
-            "(" . $wpdb->posts . ".post_title LIKE $1) OR (" . $wpdb->postmeta . ".meta_value LIKE $1)", $where);
-    }
-    return $where;
-}
-
-add_filter('posts_where', 'cf_search_where');
-
-/**
- * Prevent duplicates
- *
- * http://codex.wordpress.org/Plugin_API/Filter_Reference/posts_distinct
- */
-
-function cf_search_distinct($where)
-{
-    global $wpdb;
-    if (is_search()) {
-        return "DISTINCT";
-    }
-    return $where;
-}
-
-add_filter('posts_distinct', 'cf_search_distinct');
-
-
-// Функция поиска в WordPress
-function custom_search_query()
-{
-    global $wpdb;
-
-    // Устанавливаем флаг, который будет использоваться для проверки, был ли введен поисковый запрос
-    $has_search_query = false;
-    $params = array();
-
-    // Создаем строку с названиями полей и их значениями, которые будут передаваться в URL с помощью функции add_query_arg()
-    $query_args = '';
-
-    // Проверяем, был ли введен поисковый запрос, используя значения полей
-    if (!empty($_GET['time_start'])) {
-        $params += ['time_start' => $_GET['time_start']];
-
-        $query_args = add_query_arg('time_start', $_GET['time_start'], $query_args);
-        $has_search_query = true;
-    }
-
-    if (!empty($_GET['money_start'])) {
-        $params += ['money_start' => $_GET['money_start']];
-        $query_args = add_query_arg('money_start', $_GET['money_start'], $query_args);
-        $has_search_query = true;
-    }
-
-    // Получаем поисковый запрос из параметра "s", если он был введен
-    $search_query = '';
-
-    if (!empty($_GET['s'])) {
-        $params += ['s' => $_GET['s']];
-        $search_query = sanitize_text_field($_GET['s']);
-        $has_search_query = true;
-    }
-
-    // Если был введен поисковый запрос
-    if ($has_search_query) {
-//        // Добавляем метапараметры для поиска в нескольких полях
-//        $meta_query = array(
-//            'relation' => 'AND',
-//            array(
-//                'key' => 'field1',
-//                'value' => sanitize_text_field($_GET['field1']),
-//                'compare' => '=',
-//            ),
-//        );
+//function cf_search_join($join)
+//{
+//    global $wpdb;
+//    if (is_search()) {
+//        $join .= ' LEFT JOIN ' . $wpdb->postmeta . ' ON ' . $wpdb->posts . '.ID = ' . $wpdb->postmeta . '.post_id ';
+//    }
+//    return $join;
+//}
 //
-//        // Создаем основной аргумент запроса, включая метапараметры и поисковый запрос
-//        $args = array(
-//            'post_type' => 'post',
-//            's' => $search_query,
-//            'meta_query' => $meta_query,
-//        );
-        $query = "SELECT * FROM wp_posts WHERE";
+//add_filter('posts_join', 'cf_search_join');
+//
+///**
+// * Modify the search query with posts_where
+// *
+// * http://codex.wordpress.org/Plugin_API/Filter_Reference/posts_where
+// */
+//
+//function cf_search_where($where)
+//{
+//    global $pagenow, $wpdb;
+//    if (is_search()) {
+//        $where = preg_replace(
+//            "/\(\s*" . $wpdb->posts . ".post_title\s+LIKE\s*(\'[^\']+\')\s*\)/",
+//            "(" . $wpdb->posts . ".post_title LIKE $1) OR (" . $wpdb->postmeta . ".meta_value LIKE $1)", $where);
+//    }
+//    return $where;
+//}
+//
+//add_filter('posts_where', 'cf_search_where');
+//
+///**
+// * Prevent duplicates
+// *
+// * http://codex.wordpress.org/Plugin_API/Filter_Reference/posts_distinct
+// */
+//
+//function cf_search_distinct($where)
+//{
+//    global $wpdb;
+//    if (is_search()) {
+//        return "DISTINCT";
+//    }
+//    return $where;
+//}
+//
+//add_filter('posts_distinct', 'cf_search_distinct');
 
-        foreach ($params as $key => $value) {
-//            var_export($params);
-            $query .= " `" . $key . "`" . "=" . "`" . $value . "` ";
-            $query .= ' AND';
-        }
-        $query = substr($query, 0, -4);
-
-        print_r($wpdb->get_results($query));
-
-        // Выполняем запрос и выводим результаты
-//        $query = new WP_Query($args);
-
-        // остальной код для вывода поиска на странице
-//        $wpdb->get_results($query);
-    }
-}
-
-add_action('pre_get_posts', 'custom_search_query');
