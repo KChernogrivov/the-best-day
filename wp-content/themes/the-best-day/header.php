@@ -29,6 +29,6 @@
 <!--					<li class="nav-list__link"><a href="#">Журнал ЛД</a></li>-->
 <!--				</ul>-->
 			</div>
-			<a class="header__profile" href="#">Для организаторов</a>
+			<a class="header__profile" href="/login">Для организаторов</a>
 		</div>
 	</header><!-- #masthead -->
