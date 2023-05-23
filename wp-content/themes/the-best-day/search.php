@@ -11,14 +11,13 @@ get_header();
 ?>
 
     <main id="primary" class="site-main">
-
+        <?php get_search_form(); ?>
         <?php if (have_posts()) : ?>
 
             <header class="page-header">
-                <?php get_search_form(); ?>
-                <h1 class="page-title">
+                <h2 class="page-title">
                     Найденные события:
-                </h1>
+                </h2>
             </header><!-- .page-header -->
 
             <?php

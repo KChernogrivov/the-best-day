@@ -14,6 +14,7 @@ get_header();
 
 		<section class="error-404 not-found">
 			<header class="page-header">
+				<?php get_search_form(); ?>
 				<h1 class="page-title"><?php esc_html_e( 'Oops! That page can&rsquo;t be found.', 'the-best-day' ); ?></h1>
 			</header><!-- .page-header -->
 
