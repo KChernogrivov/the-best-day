@@ -1,0 +1,11 @@
+.registration__field fieldset div input {
+    background: #FFFFFF !important;
+    border: 1px solid #9055FF !important;
+    border-radius: 10px !important;
+}
+
+.registration__field input{
+    background: #FFFFFF !important;
+    border: 1px solid #9055FF !important;
+    border-radius: 10px !important;
+}
