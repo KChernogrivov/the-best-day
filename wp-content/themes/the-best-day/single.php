@@ -11,7 +11,7 @@ get_header();
 ?>
 
 	<main id="primary" class="site-main">
-		<?php the_meta(); ?>
+		<?php the_ID(); ?>
 		<?php
 		while ( have_posts() ) :
 			the_post();

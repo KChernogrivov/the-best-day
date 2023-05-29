@@ -29,6 +29,17 @@
 <!--					<li class="nav-list__link"><a href="#">Журнал ЛД</a></li>-->
 <!--				</ul>-->
 			</div>
-			<a class="header__profile" href="/login">Для организаторов</a>
+			<?php
+				if (is_user_logged_in()) {
+					?>
+					<a class="header__profile" href="/profile">Личный кабинет</a>
+					<?php
+				} else {
+					?>
+					<a class="header__profile" href="/login">Для организаторов</a>
+			<?php
+				}
+			?>
+
 		</div>
 	</header><!-- #masthead -->
