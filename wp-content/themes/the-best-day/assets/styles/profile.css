@@ -68,6 +68,8 @@
     text-align: center;
 }
 
+/* start actions in profile table */
+
 .events-table__actions {
     text-align: center;
 }
@@ -76,9 +78,35 @@
     display: none !important;
 }
 
-.events-table__label {
+.events-table__trash-svg circle, .events-table__trash-svg path,
+.events-table__edit-svg circle, .events-table__edit-svg path,
+.events-table__cancel-svg circle, .events-table__cancel-svg path,
+.events-table__confirm-svg circle, .events-table__confirm-svg path {
+    transition: 0.2s;
     cursor: pointer;
 }
+
+.events-table__trash-svg:hover circle:nth-child(2n), .events-table__trash-svg:hover path {
+    stroke: #C20404 !important;
+    stroke-opacity: 1 !important;
+}
+
+.events-table__confirm-svg:hover circle:nth-child(2n), .events-table__confirm-svg:hover path {
+    stroke: #4CA85A !important;
+    stroke-opacity: 1 !important;
+}
+
+.events-table__cancel-svg:hover circle:nth-child(2n), .events-table__cancel-svg:hover path {
+    stroke: #C20404 !important;
+    stroke-opacity: 1 !important;
+}
+
+.events-table__edit-svg:hover circle:nth-child(2n), .events-table__edit-svg:hover path {
+    stroke: #384FE4 !important;
+    stroke-opacity: 1 !important;
+}
+
+/* end actions in profile table */
 
 .events-table__event-status--publish {
     background: #4CA85A;
