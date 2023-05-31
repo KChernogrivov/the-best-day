@@ -72,6 +72,14 @@
     text-align: center;
 }
 
+.events-table__button {
+    display: none !important;
+}
+
+.events-table__label {
+    cursor: pointer;
+}
+
 .events-table__event-status--publish {
     background: #4CA85A;
     padding: 5px 23px;
