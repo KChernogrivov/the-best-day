@@ -957,22 +957,28 @@ textarea {
 	url('assets/fonts/circe.woff') format('woff'),
 	url('assets/fonts/circe.ttf') format('ttf'),
 	url('assets/fonts/circe.eot') format('eot');
+	font-weight: normal;
+	font-style: italic;
 }
 
 @font-face {
-	font-family: 'Circe bold';
+	font-family: 'Circe';
 	src: local('Circe bold'),
 	url('assets/fonts/circe_bold.woff2') format('woff2'),
 	url('assets/fonts/circe_bold.woff') format('woff'),
 	url('assets/fonts/circe_bold.ttf') format('ttf'),
 	url('assets/fonts/circe_bold.eot') format('eot');
+	font-weight: bold;
+	font-style: normal;
 }
 
 @font-face {
-	font-family: 'Circe light';
+	font-family: 'Circe';
 	src: local('Circe light'),
 	url('assets/fonts/circe_light.woff2') format('woff2'),
 	url('assets/fonts/circe_light.woff') format('woff'),
 	url('assets/fonts/circe_light.ttf') format('ttf'),
 	url('assets/fonts/circe_light.eot') format('eot');
+	font-weight: lighter;
+	font-style: normal;
 }

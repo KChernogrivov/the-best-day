@@ -44,7 +44,7 @@ get_header();
                         'compare' => 'BETWEEN',
                     ),
                     array(
-                        'key' => 'time_to_come',
+                        'key' => 'time_start',
                         'value' => array($_GET['time_start'], $_GET['time_end']),
                         'type' => 'TIME',
                         'compare' => 'BETWEEN',
@@ -68,11 +68,12 @@ get_header();
 //				 Выполняем запрос и выводим результаты
                 $query = new WP_Query($args);
             }
-
+            if ($query->have_posts()) {?>
+                <div class="search-result">
+            <?php }
             /* Start the Loop */
             while ($query->have_posts()) :
                 $query->the_post();
-
                 /**
                  * Run the loop for the search to output the results.
                  * If you want to overload this in a child theme then include a file
@@ -82,7 +83,9 @@ get_header();
 
             endwhile;
 
-            the_posts_navigation();
+            ?>
+                </div>
+            <?php
 
         else :
 

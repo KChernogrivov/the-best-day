@@ -26,7 +26,7 @@ get_header();
 					<div class="time-price">
 						<div class="group">
 							<p class="group__title">Во сколько приходить</p>
-							<p class="group__data"><?php the_field('time_to_come')?></p>
+							<p class="group__data"><?php the_field('time_start')?> - <?php the_field('time_finish') ?></p>
 						</div>
 						<div class="group">
 							<p class="group__title">Примерно потратите</p>

@@ -77,3 +77,18 @@
     margin-top: 40px;
     margin-bottom: 20px;
 }
+
+/* result searching */
+
+.search-result {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 25px;
+}
+
+@media (max-width: 459px) {
+    .search-result {
+        display: flex;
+        flex-direction: column;
+    }
+}

@@ -18,8 +18,3 @@
 
 </body>
 </html>
-
-
-<?php
-echo '<a class="option" onclick="return confirm("Вы уверены что хотите удалить ' . get_the_title() . '")" href="'. get_delete_post_link() .'">Удалить</a></td>';
-?>
