@@ -45,6 +45,7 @@ get_header();
                     ),
                 );
                 if (!empty($_GET['emotion'])) {
+                    var_dump('emotion_1', 'emotion_2');
                     $meta_query[] = array(
                         'key' => array('emotion_1', 'emotion_2'),
                         'value' => $_GET['emotion'],

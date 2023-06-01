@@ -2,3 +2,15 @@
     display: flex;
     gap: 5px;
 }/* End custom CSS */
+/* Start Custom Fonts CSS */@font-face {
+	font-family: 'Circle';
+	font-style: normal;
+	font-weight: normal;
+	font-display: auto;
+	src: url('http://localhost/wp-content/uploads/2023/06/circe.eot');
+	src: url('http://localhost/wp-content/uploads/2023/06/circe.eot?#iefix') format('embedded-opentype'),
+		url('http://localhost/wp-content/uploads/2023/06/circe.woff2') format('woff2'),
+		url('http://localhost/wp-content/uploads/2023/06/circe.ttf') format('truetype'),
+		url('http://localhost/wp-content/uploads/2023/06/circe.svg#Circle') format('svg');
+}
+/* End Custom Fonts CSS */

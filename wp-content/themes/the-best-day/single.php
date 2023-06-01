@@ -30,7 +30,7 @@ get_header();
 						</div>
 						<div class="group">
 							<p class="group__title">Примерно потратите</p>
-							<p class="group__data"><?php the_field('cost') ?></p>
+							<p class="group__data"><?php the_field('cost')?> Руб.</p>
 						</div>
 					</div>
 					<div class="post__place">
