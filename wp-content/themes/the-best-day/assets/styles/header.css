@@ -45,7 +45,8 @@ a {
     display: flex;
     justify-content: center;
     align-items: center;
-    font-family: 'Circe bold', serif;
+    font-family: 'Circe', Sans-serif;
+    font-weight: bold;
     font-style: normal;
     font-size: 16px;
     line-height: 24px;

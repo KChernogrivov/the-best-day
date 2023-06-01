@@ -22,12 +22,6 @@
 					'menu_class' => 'nav-list'
 				))
 				?>
-<!--				<ul class="nav-list">-->
-<!--					<li class="nav-list__link"><a href="#">Топ месяца</a></li>-->
-<!--					<li class="nav-list__link"><a href="#">Онлайн движ</a></li>-->
-<!--					<li class="nav-list__link"><a href="#">Инста-место</a></li>-->
-<!--					<li class="nav-list__link"><a href="#">Журнал ЛД</a></li>-->
-<!--				</ul>-->
 			</div>
 			<?php
 				if (is_user_logged_in()) {

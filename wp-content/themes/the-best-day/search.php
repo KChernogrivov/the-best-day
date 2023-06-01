@@ -14,12 +14,6 @@ get_header();
         <?php get_search_form(); ?>
         <?php if (have_posts()) : ?>
 
-            <header class="page-header">
-                <h2 class="page-title">
-                    Найденные события:
-                </h2>
-            </header><!-- .page-header -->
-
             <?php
 
             $has_search_query = true;
@@ -69,8 +63,15 @@ get_header();
                 $query = new WP_Query($args);
             }
             if ($query->have_posts()) {?>
+                <header class="page-header">
+                    <h2 class="page-title">
+                        Найденные события:
+                    </h2>
+                </header><!-- .page-header -->
                 <div class="search-result">
-            <?php }
+            <?php } else {
+                get_template_part('template-parts/content', 'none');
+            };
             /* Start the Loop */
             while ($query->have_posts()) :
                 $query->the_post();
@@ -86,7 +87,6 @@ get_header();
             ?>
                 </div>
             <?php
-
         else :
 
             get_template_part('template-parts/content', 'none');
