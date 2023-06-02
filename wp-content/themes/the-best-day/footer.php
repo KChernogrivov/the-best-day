@@ -9,7 +9,7 @@
             </svg>
             Создать свой плейс
         </a>
-        <p>г. Томск</p>
+        <p class="footer__city">г. Томск</p>
     </div>
 </footer><!-- #colophon -->
 </div><!-- #page -->

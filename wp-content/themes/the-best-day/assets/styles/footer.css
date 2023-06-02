@@ -9,8 +9,18 @@
 }
 
 .create-own-place {
+    font-family: "Circle", Sans-serif;
+    color: #9055FF !important;
     display: flex;
     gap: 10px;
     justify-content: center;
     align-items: center;
+}
+
+.footer__city {
+    font-family: 'Circe', Sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    color: #1E1E1E;
 }

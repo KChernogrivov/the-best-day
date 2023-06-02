@@ -83,6 +83,7 @@ define( 'WP_DEBUG', false );
 /* Произвольные значения добавляйте между этой строкой и надписью "дальше не редактируем". */
 
 define('ALLOW_UNFILTERED_UPLOADS', true);
+define( 'WP_POST_REVISIONS', false );
 
 /* Это всё, дальше не редактируем. Успехов! */
 
