@@ -1,0 +1,6 @@
+2023-06-03T03:18:30+00:00 syntax error, unexpected token "(", expecting variable or "{" or "$"
+2023-06-03T03:18:30+00:00 Snippet "locate datepickers for wpforms" (#772) was automatically deactivated due to a fatal error.
+2023-06-03T05:07:24+00:00 syntax error, unexpected identifier "H"
+2023-06-03T05:07:24+00:00 Snippet "new format data wpforms" (#769) was automatically deactivated due to a fatal error.
+2023-06-03T05:07:48+00:00 syntax error, unexpected identifier "H"
+2023-06-03T13:43:58+00:00 Cannot redeclare update_post_on_save() (previously declared in C:\xampp\htdocs\wp-content\themes\the-best-day\functions.php:258)

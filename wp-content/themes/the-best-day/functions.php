@@ -254,4 +254,3 @@ if (defined('JETPACK__VERSION')) {
 //}
 //
 //add_filter('posts_distinct', 'cf_search_distinct');
-
