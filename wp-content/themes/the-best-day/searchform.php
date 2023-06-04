@@ -97,27 +97,27 @@
             </div>
             <div id="partner-field__dropdown" class="search__dropdown">
                 <div class="search__dropdown-item">
-                    <input class="search__input" placeholder="Поиск" type="checkbox" value="" id="solo" name="with" />
+                    <input class="search__input" placeholder="Поиск" type="checkbox" value="Один" id="solo" name="company[]" />
                     <label class="search__label" for="solo">Один</label>
                 </div>
                 <div class="search__dropdown-item">
-                    <input class="search__input" placeholder="Поиск" type="checkbox" value="" id="friend" name="with" />
+                    <input class="search__input" placeholder="Поиск" type="checkbox" value="С другом/подругой" id="friend" name="company[]" />
                     <label class="search__label" for="friend">С другом/подругой</label>
                 </div>
                 <div class="search__dropdown-item">
-                    <input class="search__input" placeholder="Поиск" type="checkbox" value="" id="children" name="with" />
+                    <input class="search__input" placeholder="Поиск" type="checkbox" value="С детьми" id="children" name="company[]" />
                     <label class="search__label" for="children">С детьми</label>
                 </div>
                 <div class="search__dropdown-item">
-                    <input class="search__input" placeholder="Поиск" type="checkbox" value="" id="parents" name="with" />
+                    <input class="search__input" placeholder="Поиск" type="checkbox" value="С родителями" id="parents" name="company[]" />
                     <label class="search__label" for="parents">С родителями</label>
                 </div>
                 <div class="search__dropdown-item">
-                    <input class="search__input" placeholder="Поиск" type="checkbox" value="" id="lover" name="with" />
+                    <input class="search__input" placeholder="Поиск" type="checkbox" value="На свидание" id="lover" name="company[]" />
                     <label class="search__label" for="lover">На свидание</label>
                 </div>
                 <div class="search__dropdown-item">
-                    <input class="search__input" placeholder="Поиск" type="checkbox" value="" id="group" name="with" />
+                    <input class="search__input" placeholder="Поиск" type="checkbox" value="С компанией" id="group" name="company[]" />
                     <label class="search__label" for="group">С компанией</label>
                 </div>
             </div>

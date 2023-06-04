@@ -27,6 +27,7 @@ get_header();
 						<div class="group">
 							<p class="group__title">Во сколько приходить</p>
 							<p class="group__data"><?php the_field('time_start')?> - <?php the_field('time_finish') ?></p>
+							<p class="group__data"><?php the_field('emotion_1')?></p>
 						</div>
 						<div class="group">
 							<p class="group__title">Примерно потратите</p>
