@@ -2,17 +2,17 @@
     <div class="slider-container">
         <div class="profile-menu">
             <div class="profile-menu__items">
-                <a class="profile-menu__link" href="?cat=8">Музеи и экскурсии</a>
-                <a class="profile-menu__link" href="?cat=9">Кино</a>
-                <a class="profile-menu__link" href="?cat=10">Еда</a>
-                <a class="profile-menu__link" href="?cat=11">Мастер-класс</a>
-                <a class="profile-menu__link" href="?cat=11">Для детей</a>
-                <a class="profile-menu__link" href="?cat=13">Квест и ВР</a>
-                <a class="profile-menu__link" href="?cat=14">Спорт</a>
-                <a class="profile-menu__link" href="?cat=15">Вечеринки</a>
-                <a class="profile-menu__link" href="?cat=16">Театр</a>
-                <a class="profile-menu__link" href="?cat=17">Концерт</a>
-                <a class="profile-menu__link" href="?cat=18">Полезно</a>
+                <a class="profile-menu__link" href="/?cat=8">Музеи и экскурсии</a>
+                <a class="profile-menu__link" href="/?cat=9">Кино</a>
+                <a class="profile-menu__link" href="/?cat=10">Еда</a>
+                <a class="profile-menu__link" href="/?cat=11">Мастер-класс</a>
+                <a class="profile-menu__link" href="/?cat=11">Для детей</a>
+                <a class="profile-menu__link" href="/?cat=13">Квест и ВР</a>
+                <a class="profile-menu__link" href="/?cat=14">Спорт</a>
+                <a class="profile-menu__link" href="/?cat=15">Вечеринки</a>
+                <a class="profile-menu__link" href="/?cat=16">Театр</a>
+                <a class="profile-menu__link" href="/?cat=17">Концерт</a>
+                <a class="profile-menu__link" href="/?cat=18">Полезно</a>
             </div>
         </div>
     </div>

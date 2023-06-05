@@ -9,13 +9,13 @@
 
 get_header();
 ?>
-
 	<main id="primary" class="site-main">
 
 		<?php if ( have_posts() ) : ?>
 
 			<?php
 			/* Start the Loop */
+			echo "qwe";
 			while ( have_posts() ) :
 				the_post();
 

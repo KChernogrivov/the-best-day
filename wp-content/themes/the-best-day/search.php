@@ -106,21 +106,20 @@ get_header();
                     </h2>
                 </header><!-- .page-header -->
                 <div class="search-result">
-            <?php } else {
-                get_template_part('template-parts/content', 'none');
+            <?php
+                while ($query->have_posts()) {
+                    $query->the_post();
+                    /**
+                     * Run the loop for the search to output the results.
+                     * If you want to overload this in a child theme then include a file
+                     * called content-search.php and that will be used instead.
+                     */
+                    get_template_part('template-parts/content', 'search');
+                }
             }
         ;
             /* Start the Loop */
-            while ($query->have_posts()) :
-                $query->the_post();
-                /**
-                 * Run the loop for the search to output the results.
-                 * If you want to overload this in a child theme then include a file
-                 * called content-search.php and that will be used instead.
-                 */
-                get_template_part('template-parts/content', 'search');
 
-            endwhile;
 
             ?>
             </div>
