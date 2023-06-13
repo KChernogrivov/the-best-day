@@ -15,7 +15,6 @@ get_header();
 
 			<?php
 			/* Start the Loop */
-			echo "qwe";
 			while ( have_posts() ) :
 				the_post();
 

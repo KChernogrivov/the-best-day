@@ -97,3 +97,11 @@
 		}
 	}
 }() );
+
+let ham = document.getElementsByClassName("ham")[0];
+let menu = document.getElementsByClassName("menu__mobile")[0];
+ham.addEventListener("click", openMenu);
+function openMenu() {
+	ham.classList.toggle("active");
+	menu.classList.toggle("menu__mobile--active");
+}

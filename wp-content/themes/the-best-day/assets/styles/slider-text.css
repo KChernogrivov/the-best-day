@@ -15,14 +15,38 @@
 }
 
 .profile-menu__items {
-    overflow-x: auto;
+    overflow-x: hidden;
     overflow-y: hidden;
-    height: 25px;
+    padding: 0 0 10px;
     display: flex;
     flex-wrap: nowrap;
+
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.profile-menu__items::-webkit-scrollbar {
+    width: 4px !important;
+    height: 4px;
+    background-color: rgba(0, 0, 0, 0.1);    /* цвет плашки */
+    border-radius: 10px;
+}
+
+.profile-menu__items::-webkit-scrollbar-thumb {
+    background: linear-gradient(93.98deg, #9055FF 0%, #13E2DA 59.9%);
 }
 
 .profile-menu__link {
     white-space: nowrap;
     margin-right: 18px;
+}
+
+@media screen and (max-width: 1200px) {
+    .profile-menu__items {
+        overflow-x: auto;
+    }
 }
