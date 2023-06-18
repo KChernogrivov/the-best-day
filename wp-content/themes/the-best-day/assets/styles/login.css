@@ -1,8 +1,16 @@
 .login-field {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
+    width: 250px !important;
+    margin: 0 auto !important;
+}
+
+.login-page__title {
+    margin: 40px 0 10px 0;
+    font-family: 'Circe', serif;
+    font-style: normal;
+    font-weight: 600 !important;
+    font-size: 24px;
+    line-height: 35px;
+    color: #1E1E1E;
 }
 
 .wpforms-submit-container {
@@ -10,6 +18,21 @@
     justify-content: center;
     align-items: center;
 }
+
+.wpforms-field-required {
+    max-width: 100% !important;
+}
+
+.wpforms-field-label {
+    width: 100%;
+    margin: 0 0 5px 0 !important;
+}
+
+
+
+
+
+
 
 .wpforms-field-small {
     background: #FFFFFF !important;

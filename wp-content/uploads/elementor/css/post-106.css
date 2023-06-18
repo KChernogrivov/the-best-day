@@ -1,0 +1,12 @@
+.elementor-106 .elementor-element.elementor-element-56a5494c{font-family:"Circle", Sans-serif;font-size:24px;font-weight:400;}/* Start Custom Fonts CSS */@font-face {
+	font-family: 'Circle';
+	font-style: normal;
+	font-weight: normal;
+	font-display: auto;
+	src: url('http://localhost/wp-content/uploads/2023/06/circe.eot');
+	src: url('http://localhost/wp-content/uploads/2023/06/circe.eot?#iefix') format('embedded-opentype'),
+		url('http://localhost/wp-content/uploads/2023/06/circe.woff2') format('woff2'),
+		url('http://localhost/wp-content/uploads/2023/06/circe.ttf') format('truetype'),
+		url('http://localhost/wp-content/uploads/2023/06/circe.svg#Circle') format('svg');
+}
+/* End Custom Fonts CSS */

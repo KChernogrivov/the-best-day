@@ -9,3 +9,68 @@
     border: 1px solid #9055FF !important;
     border-radius: 10px !important;
 }
+
+.page-title {
+    margin: 40px 0 10px 0;
+    font-family: 'Circe', serif;
+    font-style: normal;
+    font-weight: 600 !important;
+    font-size: 24px;
+    line-height: 35px;
+    color: #1E1E1E;
+}
+
+.wpforms-field-name {
+    justify-content: space-between;
+}
+
+.wpforms-field-name .wpforms-first {
+    padding: 0 0 0 10px !important;
+    order: 2;
+}
+
+.wpforms-field-name div:nth-child(2) {
+    padding: 0 10px 0 0 !important;
+    order: 1;
+}
+
+.registration__field {
+    width: min(400px, 100%) !important;
+    margin: 0 auto !important;
+}
+
+.registration__field > fieldset > .wpforms-field-row {
+    max-width: 100% !important;
+}
+
+.wpforms-submit-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.wpforms-field-required {
+    max-width: 100% !important;
+}
+
+.registration__field .wpforms-field-label {
+    width: 100% !important;
+}
+
+@media screen and (max-width: 390px) {
+    .registration__field:first-child fieldset div {
+        flex-direction: column;
+    }
+
+    .wpforms-field-name .wpforms-first {
+        width: 100% !important;
+        padding: 5px 0 0 0 !important;
+        order: 2;
+    }
+
+    .wpforms-field-name div:nth-child(2) {
+        width: 100% !important;
+        padding: 0 0 5px 0 !important;
+        order: 1;
+    }
+}

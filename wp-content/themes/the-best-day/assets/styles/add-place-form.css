@@ -1,0 +1,30 @@
+.wpforms-submit-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.wpforms-field-required {
+    max-width: 100% !important;
+}
+
+.wpforms-field-label {
+    width: 100%;
+    margin: 0 0 5px 0 !important;
+}
+
+.create-place__field {
+    width: min(400px, 100%) !important;
+    margin: 0 auto !important;
+}
+
+.create-place__field input, .choices__inner, .create-place__field textarea, .create-place__field .wpforms-uploader {
+    background: #FFFFFF !important;
+    border: 1px solid #9055FF !important;
+    border-radius: 10px !important;
+}
+
+.create-place__field select {
+    border: 1px solid #9055FF !important;
+    border-radius: 10px !important;
+}
