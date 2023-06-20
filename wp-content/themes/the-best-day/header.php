@@ -54,7 +54,19 @@
 					<li class="aside__element"><a href="#">Онлайн движ</a></li>
 					<li class="aside__element"><a href="#">Инста-место</a></li>
 					<li class="aside__element"><a href="#">Журнал ЛД</a></li>
-					<li class="aside__element"><a href="#">Для огранизаторов</a></li>
+					<li class="aside__element">
+						<?php
+						if (is_user_logged_in()) {
+							?>
+							<a href="/profile">Личный кабинет</a>
+							<?php
+						} else {
+							?>
+							<a href="/login">Для организаторов</a>
+							<?php
+						}
+						?>
+					</li>
 				</ul>
 			</aside>
 			<a href="/" class="header__logo">ЛучшийДень.рф</a>
