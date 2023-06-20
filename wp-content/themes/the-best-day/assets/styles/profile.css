@@ -70,6 +70,42 @@
 
 /* start actions in profile table */
 
+.events--mobile {
+    display: none !important;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.events__card--mobile {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    flex-grow: 1;
+    flex-shrink: 0;
+    gap: 10px;
+    padding: 20px;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+}
+
+.events-table__actions--mobile {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    padding: 10px 0 0 !important;
+}
+
+.events__card-title--mobile {
+    height: 30px;
+    overflow: hidden;
+}
+
+.events__card--mobile h2 {
+    margin-block-start: 0;
+    margin-block-end: 0;
+}
+
 .events-table__actions {
     text-align: center;
 }
@@ -124,4 +160,13 @@
     background: #ed5656;
     padding: 5px 23px;
     border-radius: 50px;
+}
+
+@media (max-width: 767px) {
+    .events--mobile {
+        display: flex !important;
+    }
+    .events-table {
+        display: none;
+    }
 }
